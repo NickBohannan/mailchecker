@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PAL Mail Checker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <img id="logo" src="PAL_BlueTexture.png">
+    <div id="title">PAL Mail Checker</div>
+    <div id="form-container">
+        <form id="mainform" method="post" action="/">
+            <div id="message">Search by Date Range and/or Account Number</div>
+            <div id="radio-row">
+                <input type="radio" name="dateoraccount" value="date">
+                <div>Date Range Only</div>
+            </div>
+            <div id="radio-row">
+                <input type="radio" name="dateoraccount" value="account">
+                <div>Account Only</div>
+            </div>
+            <div id="radio-row">
+                <input type="radio" name="dateoraccount" value="both">
+                <div>Date Range By Account (Fill out all fields)</div>
+            </div>
+            <label>Starting Date</label>
+            <input type="text" name="startingdate" />
+            <label>Ending Date</label>
+            <input type="text" name="endingdate" />
+            <div class="hline"></div>
+            <label>Account Number</label>
+            <input id="accnum" type="text" name="accountnumber" />
+            <input type="submit" value="submit" />
+        </form>
+    </div>
+  </body>
+</html>
+
+

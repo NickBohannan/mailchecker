@@ -1,0 +1,19 @@
+{
+  "name": "mailchecker",
+  "version": "1.0.0",
+  "description": "Mail checker to check how many pieces of mail arrive per time period per account",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Nick Bohannan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mssql": "^5.1.0",
+    "sequelize": "^5.21.0"
+  }
+}

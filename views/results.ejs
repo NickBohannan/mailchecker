@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PAL Mail Checker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <img id="logo" src="PAL_BlueTexture.png">
+    <div id="title">PAL Mail Checker</div>
+    <ul class="mainlist">
+        <% for (let i = 0; i < results.length; i++) { %>
+        <li><%= results[i].sTime.substring(0, 10) %> - <%= results[i].Account %></li>
+        <% } %>
+    </li>
+  </body>
+</html>
