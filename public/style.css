@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 #title {
@@ -47,5 +48,77 @@ body {
     margin: 10px 0 10px 0;
     display: flex;
     flex-direction: row;
+}
+
+#submit-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    background-color: #bfd7ff;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+.mainlist {
+    margin-top: 20px;
+}
+
+.results {
+    font-size: 25px;
+    color: #102245;
+}
+
+#noaccount {
+    margin-top: 20px;
+}
+
+#total {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+#link-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.link-box {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #102245;
+    border-radius: 10px;
+    color: #102245;
+}
+
+.link-box:hover {
+    color: #bfd7ff;
+    border: 2px solid #bfd7ff;
+    cursor: pointer;
+}
+
+.icon {
+    margin: 20px;
+    font-size: 100px;
+}
+
+.link-title {
+    font-size: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 

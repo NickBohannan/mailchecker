@@ -7,11 +7,17 @@
   </head>
   <body>
     <img id="logo" src="PAL_BlueTexture.png">
-    <div id="title">PAL Mail Checker</div>
-    <ul class="mainlist">
-        <% for (let i = 0; i < results.length; i++) { %>
-        <li><%= results[i].sTime.substring(0, 10) %> - <%= results[i].Account %></li>
-        <% } %>
-    </li>
+    <div id="title">PAL Mail Checker - Excess Boxes</div>
+    <div class="mainlist">
+      <% for (let i = 0; i < finalArray.length; i++) { %>
+      <% if (!finalArray[i].Account.includes('0')) { %>
+      <% finalArray[i].Counter = finalArray[i].Counter + 1 %>
+        <div class="results">No Account - <%= finalArray[i].Counter %> boxes</div>
+      <% } else { %>
+        <div class="results"><%= finalArray[i].Account %> - <%= finalArray[i].Counter %> boxes</div>
+      <% } %>
+      <% } %>
+    </div>
+    <div id="total">Total Excess Boxes for Today: <%= total %></div>
   </body>
 </html>

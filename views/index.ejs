@@ -2,15 +2,42 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>PAL Mail Checker</title>
+    <title>PAL Admin Dashboard</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
     <img id="logo" src="PAL_BlueTexture.png">
-    <div id="title">PAL Mail Checker</div>
-    <div id="form-container">
+    <div id="title">PAL Admin Dashboard</div>
+    <div id="link-container">
+      <a href="/mailchecker">
+        <div class="link-box">
+          <i class="far fa-envelope icon"></i>
+          <div class="link-title">Mail Checker</div>
+        </div>
+      </a>
+      <a href="/backscan">
+        <div class="link-box">
+          <i class="fas fa-print icon"></i>
+          <div class="link-title">Missed Backscan Search</div>            
+        </div>
+      </a>
+    </div>
+    <!-- <div id="form-container">
         <form id="mainform" method="post" action="/">
             <div id="message">Search by Date Range and/or Account Number</div>
+            <i class="fab fa-accessible-icon"></i>
+            <div id="radio-row">
+                <input type="radio" name="dateoraccount" value="multiples">
+                <div>Multiples Today</div>
+            </div>
             <div id="radio-row">
                 <input type="radio" name="dateoraccount" value="date">
                 <div>Date Range Only</div>
@@ -30,9 +57,11 @@
             <div class="hline"></div>
             <label>Account Number</label>
             <input id="accnum" type="text" name="accountnumber" />
-            <input type="submit" value="submit" />
+            <div id="submit-container">
+              <input id="submit" type="submit" value="Submit" />
+            </div>
         </form>
-    </div>
+    </div> -->
   </body>
 </html>
 

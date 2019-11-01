@@ -5,6 +5,7 @@ const path = require('path')
 
 const routes = require('./routes/index')
 const Mail = require('./models/mail')
+const Order = require('./models/order')
 
 const app = express()
 
@@ -25,3 +26,4 @@ app.listen(port, () => {
 })
 
 Mail.sync()
+Order.sync()
