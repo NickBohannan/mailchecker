@@ -145,7 +145,7 @@ router.post('/', async (req, res) => {
 })
 
 router.get('/backscan', (req, res) => {
-    res.render('/backscan')
+    res.render('backscan')
 })
 
 router.post('/backscan', async (req, res) => {
@@ -154,11 +154,12 @@ router.post('/backscan', async (req, res) => {
     let fileArray = []
 
     try {
+
         let fourMonthOrders = await Order.findAll({
             where: {
                 actual_ship_date: {
-                    [Op.gt]: moment().subtract(11, 'days'),
-                    [Op.lt]: moment().subtract(10, 'days')
+                    [Op.gt]: req.body.startingdate,
+                    [Op.lt]: req.body.endingdate
                 },
                 patient_name: {
                     [Op.notLike]: '%test%',
